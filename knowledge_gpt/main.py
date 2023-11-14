@@ -49,7 +49,8 @@ if not openai_api_key:
 
 
 # Path to your specific file
-article_path = '/Users/dejvid/fromGit/GitHub/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt'  # Update the path as needed
+#article_path = '/Users/dejvid/fromGit/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt'  
+article_path = '/mount/src/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt' # Update the path as needed
 
 
 # Load the specific file
