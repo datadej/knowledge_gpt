@@ -17,6 +17,9 @@ from knowledge_gpt.core.chunking import chunk_file
 from knowledge_gpt.core.embedding import embed_files
 from knowledge_gpt.core.qa import query_folder
 from knowledge_gpt.core.utils import get_llm
+from io import BytesIO
+from hashlib import md5
+
 
 
 EMBEDDING = "openai"
@@ -26,8 +29,8 @@ MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
 # Uncomment to enable debug mode
 # MODEL_LIST.insert(0, "debug")
 
-st.set_page_config(page_title="KnowledgeGPT", page_icon="📖", layout="wide")
-st.header("📖KnowledgeGPT")
+st.set_page_config(page_title="Vink GPT", page_icon="🍕", layout="wide")
+st.header("🍕Vink GPT")
 
 # Enable caching for expensive functions
 bootstrap_caching()
@@ -44,11 +47,59 @@ if not openai_api_key:
     )
 
 
-uploaded_file = st.file_uploader(
-    "Upload a pdf, docx, or txt file",
-    type=["pdf", "docx", "txt"],
-    help="Scanned documents are not supported yet!",
-)
+
+# Path to your specific file
+article_path = '/Users/dejvid/fromGit/GitHub/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt'  # Update the path as needed
+
+
+# Load the specific file
+with open(article_path, 'rb') as file:
+    file_content = file.read()
+
+# Create a BytesIO object from the file content
+bytes_data = BytesIO(file_content)
+
+# Mock-up file object
+class MockUploadedFile:
+    def __init__(self, name, bytes_data):
+        self.name = name
+        self.bytes_data = bytes_data
+        self.size = len(bytes_data.getvalue())  # Size might be required for some operations
+
+    def read(self):
+        # Reset the pointer to the beginning of the file each time before reading
+        self.bytes_data.seek(0)
+        return self.bytes_data.read()
+
+    def close(self):
+        self.bytes_data.close()
+
+    def getvalue(self):
+        # For methods that might use getvalue instead of read
+        return self.bytes_data.getvalue()
+
+    def seek(self, offset, whence=0):
+        # This might be required if your process seeks within the file
+        self.bytes_data.seek(offset, whence)
+
+    @property
+    def closed(self):
+        # This property might be checked by some functions
+        return self.bytes_data.closed
+
+
+# Instantiate the mock-up file object
+uploaded_file = MockUploadedFile('oslo_top_50.txt', bytes_data)
+
+# Use the `uploaded_file` in the same way as if it was returned by `st.file_uploader`
+try:
+    # Ensure that read_file expects a file object with a 'name' attribute
+    file = read_file(uploaded_file)
+    # ...
+except Exception as e:
+    display_file_read_error(e, file_name=uploaded_file.name)
+    st.stop()
+
 
 model: str = st.selectbox("Model", options=MODEL_LIST)  # type: ignore
 
@@ -84,7 +135,7 @@ with st.spinner("Indexing document... This may take a while⏳"):
     )
 
 with st.form(key="qa_form"):
-    query = st.text_area("Ask a question about the document")
+    query = st.text_area("In English, ask a question about the [Vink Article](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na) on the hottest restaurants in Oslo right now")
     submit = st.form_submit_button("Submit")
 
 
