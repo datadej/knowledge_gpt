@@ -1,14 +1,55 @@
-13/11/2023, 23:25 osloTop50EN.txt
-file:///Users/dejvid/fromGit/GitHub/vink-gpt/osloTop50EN.txt 1/3
-13/11/2023, 13:16 Here are Oslo's hottest restaurants right now
-https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na
-1/9
-Add to list
-These are the hottest
-restaurants in Oslo now
-Great newcomers, great burgers and delicious dumplings.
-These eight eateries are in the air this autumn.
-Erik Gulbrandsen Restaurant reviewer
-28 Oct. 2023 Last updated 27 Oct. 2023, 15:04
-Food & Drink City life & Guides Movies & Series T op lists
-13/11/2023, 13:16 Here are Oslo's hottest restaurants right now
+### Oslo's Hottest Restaurants - Autumn 2023
+Great newcomers, great burgers and delicious dumplings. These eight eateries are in the air this autumn.
+New restaurants open almost weekly. Some of them we barely manage to visit before they are gone, while others become instant favourites.
+In this overview, you will find eight places that belong to the last category. These are this year's hottest newcomers. Enjoy!
+These are the highlighted restaurants making waves in Oslo as of Autumn 2023, each bringing unique flavors and experiences to the city's culinary scene.
+
+1. **LIMINAL**
+   - **Rating:** 5
+   - **Location:** Torshovgata 15, Torshov
+   - **Description:** Offers pure flavours, good wine, and a pleasant evening in an intimate and bright room with an open kitchen. Guests can choose from the à la carte menu or book a table for the full menu at NOK 750. Nearby are bars like Bruun-Larsen, Lasarett, and Bar Albatross for drinks.
+   - **Review:** [Liminal Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+2. **BETONG**
+   - **Rating:** 5
+   - **Location:** Operagaten 77D, Bjørvika
+   - **Description:** An informal and rough restaurant in Bjørvika opened before the summer. Head chef Jonathan Hagen offers both single dishes and larger menus, including five and eight courses for NOK 665 and NOK 995. The venue is minimalist with timeless photographs and an open kitchen.
+   - **Review:** [Betong Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+3. **RENDER BURGER**
+   - **Rating:** 5
+   - **Location:** Toftes gate 19B, Grünerløkka
+   - **Description:** Known for its high-quality burgers, including the Osl oh ama smash burger with toasted bread, crispy crust meat with a juicy core, fried onions, and melted cheese. It's a top contender for the best burger in town.
+   - **Review:** [Render Burger Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+4. **VAREMOTTAKET**
+   - **Rating:** 6
+   - **Location:** Dronning Eufemias gate 37, Bjørvika
+   - **Description:** Offers great food in informal surroundings with good service. Managed by chefs Halaigh Whelan-McManus and Peder Støylen, it's located in the back room of Annie's Pølsemakeri. Features a three-course menu for NOK 1,195, a cool playlist, and a vibrant atmosphere.
+   - **Review:** [Varemottaket Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+5. **MADONNA**
+   - **Rating:** 5
+   - **Location:** Operagata 17, Bjørvika
+   - **Description:** A mix of exciting talents and experienced chefs in the kitchen, located in the Munchs brygge, a red brick house. Offers small and medium-sized dishes, main courses, and a secret lunch menu on Fridays and Saturdays.
+   - **Review:** [Madonna Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+6. **YUM CHA**
+   - **Rating:** 4
+   - **Location:** Ole Vigs gate 24B, Majorstuen
+   - **Description:** Cantonese dim sum in urban premises. Offers a spicy cocktail and a variety of dumplings, including steamed, fried, and baked. Features a "house menu" with eleven flavors for NOK 550 and specialty rice rolls filled with beef.
+   - **Review:** [Yum Cha Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+7. **MAAL TID**
+   - **Rating:** 4
+   - **Location:** Sørligata 36, Tøyen
+   - **Description:** Offers an intimate setting with a varied menu. Located in the same premises as the former Grådi, run by the people behind Skaal in Løkka. Features dishes like big steak with pepper sauce, tartar on potato cake, oysters, skate, fried olives, and Sheperd's pie.
+   - **Review:** [Maal Tid Review Coming Soon](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+8. **JIMMY’S VIN & MATBAR**
+   - **Rating:** 5
+   - **Location:** Leirfallsgata 6, Grünerløkka
+   - **Description:** A pleasant and informal food and wine bar in the old premises of Ben Reddik. Offers a variety of dishes including tarte flambee, hams, cheeses, schnitzel, entrecôte, duck wings, and a hearty tartar with bone marrow and sourdough bread. The wine list is notable for its American wines.
+   - **Review:** [Jimmy's Review](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)
+
+---
