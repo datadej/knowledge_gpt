@@ -75,8 +75,8 @@ openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 
 # Path to your specific file
-article_path = 'oslo_top_50.txt'  
-#article_path = '/mount/src/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt' # Update the path as needed
+#article_path = 'oslo_top_50.txt'  
+article_path = '/mount/src/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt' # Update the path as needed
 
 
 # Load the specific file
