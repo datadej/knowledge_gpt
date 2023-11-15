@@ -10,7 +10,10 @@ load_dotenv()
 def sidebar():
     with st.sidebar:
         st.markdown(
-            "## Step 1\n"
+            "# Guide 🗺️"
+        )
+        st.markdown(
+            "# Step 1\n"
             "Enter the provided [OpenAI API key](https://platform.openai.com/account/api-keys) below🔑\n"  # noqa: E501
         )
         api_key_input = st.text_input(
@@ -27,9 +30,22 @@ def sidebar():
         st.markdown("---")
         st.markdown("# Step 2")
         st.markdown(
-            "🍕Vink GPT allows you to ask questions about this [Vink article](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na) on the hottest restaurants in Oslo right now."
-            "The article has been last updated on 2023-10-28, and is written in Norwegian but for the purpose of this Proof of Concept it has been translated in English and questions to Vink GPT should be made in English."
-        )
-        st.markdown("---")
+            "\nBefore trying out the Vink GPT, I recommend reading the [article](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na) to familiarize yourself with the knowledge base of this tool. Once ready, simply select the model (GPT-4 is recommended for optimal results), and start exploring."
+)
+        st.markdown("# Hints 🤔💭")
+        st.markdown(
+
+
+            "\nFeel free to ask anything related to the article **in English**. Here are some example queries:"
+            "\n- What is the main focus of the article?"
+            "\n- Which Oslo restaurant is redefining traditional cuisine?"
+            "\n- What are the top vegetarian dining spots in Oslo for Autumn 2023?"
+            "\n- Can you name an Oslo eatery that offers an exciting fusion of global flavors?"
+            )
+       # st.markdown(
+       #     "🍕Vink GPT allows you to ask questions about this [Vink article](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na) on the hottest restaurants in Oslo right now."
+       #     "The article has been last updated on 2023-10-28, and is written in Norwegian but for the purpose of this Proof of Concept it has been translated in English and questions to Vink GPT should be made in English."
+       # )
+       # st.markdown("---")
 
         faq()

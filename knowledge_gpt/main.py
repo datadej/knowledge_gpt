@@ -29,8 +29,34 @@ MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
 # Uncomment to enable debug mode
 # MODEL_LIST.insert(0, "debug")
 
-st.set_page_config(page_title="Vink GPT", page_icon="🍕", layout="wide")
-st.header("🍕Vink GPT")
+st.set_page_config(page_title="Vink GPT - Proof of Concept", page_icon="🍕", layout="wide")
+st.header("🍕Vink GPT - Proof of Concept")
+st.markdown(
+
+"### Welcome to the Proof of Concept for Vink GPT.")
+st.markdown("##### Introduction")
+st.markdown(
+    "👋 Hi, I'm [Dejvid](https://www.linkedin.com/in/dejvid-vangjelofski/), a full-time data engineer with a penchant for gastronomy and an avid user of [Vink](https://vink.aftenposten.no/), a unique service by Aftenposten, part of the Schibsted family."
+    "\n Vink offers insightful reviews and recommendations on restaurants, movies, and TV series, along with curated lists and guides.\n\n"
+)
+
+st.markdown("##### Problem & Solution")
+st.markdown(
+        "As a regular visitor to Vink, I've always been impressed with its content. However, I noticed that finding a new dining spot or deciding on an activity often involved sifting through numerous articles and reviews. This inspired a thought: What if there was a Vink GPT? A smart, responsive tool that knows everything about Vink's content. \nImagine asking it for a restaurant in your area within a specific price range, or finding a cozy spot for dinner with loved ones."
+)
+
+
+
+st.markdown("##### Proof of Concept")
+
+st.markdown(
+    "Motivated by this idea, I developed a simple Proof of Concept."
+    "Given the complexities and potential terms of use issues with web crawling, I focused this POC on one specific article: \n"
+    "[**Dette er de hotteste restaurantene i Oslo nå**](https://vink.aftenposten.no/artikkel/onOkVa/her-er-oslos-hotteste-restauranter-akkurat-na)."
+    "\nThe article was translated into English and formatted for better comprehension by the Language Learning Model. To streamline the process, I forked an existing GitHub repo and tailored it to fit this project.\n"
+    "\n⬅👀 Have a look to the sidebar on how to use the POC."
+
+)
 
 # Enable caching for expensive functions
 bootstrap_caching()
@@ -40,17 +66,17 @@ sidebar()
 openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 
-if not openai_api_key:
-    st.warning(
-        "Enter your OpenAI API key in the sidebar. You can get a key at"
-        " https://platform.openai.com/account/api-keys."
-    )
+#if not openai_api_key:
+ #   st.warning(
+ #       "Enter your OpenAI API key in the sidebar. You can get a key at"
+ #       " https://platform.openai.com/account/api-keys."
+ #   )
 
 
 
 # Path to your specific file
-#article_path = '/Users/dejvid/fromGit/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt'  
-article_path = '/mount/src/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt' # Update the path as needed
+article_path = 'oslo_top_50.txt'  
+#article_path = '/mount/src/knowledge_gpt/knowledge_gpt/core/oslo_top_50.txt' # Update the path as needed
 
 
 # Load the specific file
